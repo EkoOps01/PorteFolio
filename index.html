@@ -1,1 +1,196 @@
-<h1>Hello guys</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Développeur</title>
+  <style>
+    :root {
+      --primary-color: #1f1f2e;
+      --secondary-color: #2b2b3c;
+      --highlight-color: #4f46e5;
+      --text-color: #ffffff;
+      --accent-color: #ff6b6b;
+      --font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background: linear-gradient(135deg, #1f1f2e, #2b2b3c);
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--primary-color);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: var(--highlight-color);
+    }
+
+    header p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: var(--secondary-color);
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: var(--highlight-color);
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .skill {
+      text-align: center;
+      margin: 1rem;
+    }
+
+    .skill img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .feature {
+      width: 300px;
+      background-color: var(--primary-color);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .feature img {
+      width: 100%;
+      height: auto;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .feature p {
+      padding: 0 1rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: var(--highlight-color);
+      color: var(--text-color);
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mon Portfolio</h1>
+    <p>Développeur Expert en UI/UX, Web et Jeux</p>
+  </header>
+
+  <section class="section">
+    <h2>Mes Compétences</h2>
+    <div class="skills">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua">
+        <p>Lua</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+        <p>TypeScript</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
+        <p>SQL</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <p>CSS</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Projets et Fonctionnalités</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://via.placeholder.com/300x150" alt="Feature Image">
+        <h3>Feature 1</h3>
+        <p>Description de la fonctionnalité ou projet.</p>
+      </div>
+      <div class="feature">
+        <img src="https://via.placeholder.com/300x150" alt="Feature Image">
+        <h3>Feature 2</h3>
+        <p>Description de la fonctionnalité ou projet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section buttons">
+    <a href="https://your-tebex-link.com" target="_blank">Tebex</a>
+    <a href="https://discord.gg/your-discord" target="_blank">Discord</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Portfolio par [Votre Nom]</p>
+  </footer>
+</body>
+</html>
